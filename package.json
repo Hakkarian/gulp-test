@@ -1,0 +1,27 @@
+{
+  "name": "gulp-test",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hakkarian/gulp-test.git"
+  },
+  "keywords": [],
+  "author": "theola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hakkarian/gulp-test/issues"
+  },
+  "homepage": "https://github.com/Hakkarian/gulp-test#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-inject": "^5.0.5"
+  }
+}

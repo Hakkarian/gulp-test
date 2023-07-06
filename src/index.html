@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div class="container nav">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav-list__item"><a href="/" class="nav-list__link"><span class="nav-list__item-text">Home</span></a></li>
+                <li class="nav-list__item"><a href="/" class="nav-list__link"><span class="nav-list__item-text">Boxes</span></a></li>
+            </ul>
+                <a href="/" class="nav__logo">
+                    <picture class="nav-logo__picture">
+                    <source srcset="./images/logo1.png 1x, ./images/logo2.png 2x" class="nav-logo__source">
+                </picture>
+                <img src="./images/logo1.png" srcset="./images/logo1.png 1x, ./images/logo2.png 2x" alt="logo" class="nav-logo__img">
+                </a>
+                <ul class="nav__list">
+                    <li class="nav-list__item"><a href="/" class="nav-list__item-link"><span class="nav-list__item-text">About</span></a></li>
+                <li class="nav-list__item"><a href="/" class="nav-list__item-link"><span class="nav-list__item-text">Account</span></a></li>
+            </ul>
+            </nav>
+            <button class="menu-open">Open</button>
+            <button class="menu-close is-hidden">Close</button>
+        </div>
+        <div class="nav-menu is-hidden">
+            <div class="container">
+                <nav class="nav-menu__modal">
+                    <ul class="nav-menu__list">
+                        <li class="nav-menu__list-item"><a href="/" class="nav-menu__item-link"><span class="nav-menu__item-text">Home</span></a></li>
+                        <li class="nav-menu__list-item"><a href="/" class="nav-menu__item-link"><span class="nav-menu__item-text">What's inside</span></a></li>
+                        <li class="nav-menu__list-item"><a href="/" class="nav-menu__item-link"><span class="nav-menu__item-text">Kiwi eco box</span></a></li>
+                        <li class="nav-menu__list-item"><a href="/" class="nav-menu__item-link"><span class="nav-menu__item-text">About</span></a></li>
+                        <li class="nav-menu__list-item"><a href="/" class="nav-menu__item-link"><span class="nav-menu__item-text">Account</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero"><h1></h1>
+        <h2 class="hero-title"></h2>
+        <ul class="hero-list">
+            <li class="hero-list__item">
+                <div class="hero-list__absolute">
+                <picture class="hero-list__item-picture">
+                    <source srcset="./images/wood1.png 1x, ./images/wood2.png 2x" class="hero-list__item-source">
+                </picture>
+                <img src="./images/wood1.png" srcset="./images/wood1.png 1x, ./images/wood2.png 2x" alt="wooden" class="hero-list__item-img">
+                </div>
+            </li>
+            <li class="hero-list__item">
+                <div class="hero-list__absolute">
+                <picture class="hero-list__item-picture">
+                    <source srcset="./images/ladder1.png 1x, ./images/ladder2.png 2x" class="hero-list__item-source">
+                </picture>
+                <img src="./images/ladder1.png" srcset="./images/ladder1.png 1x, ./images/ladder2.png 2x" alt="ladder" class="hero-list__item-img">
+                </div>
+            </li>
+            <li class="hero-list__item">
+                <div class="hero-list__absolute">
+                <picture class="hero-list__item-picture">
+                    <source srcset="./images/white1.png 1x, ./images/white2.png 2x" class="hero-list__item-source">
+                </picture>
+                <img src="./images/white1.png" srcset="./images/white1.png 1x, ./images/white2.png 2x" alt="sack" class="hero-list__item-img">
+                </div>
+            </li>
+            <li class="hero-list__item">
+                <div class="hero-list__absolute">
+                <picture class="hero-list__item-picture">
+                    <source srcset="./images/apricot1.png 1x, ./images/apricot2.png 2x" class="hero-list__item-source">
+                </picture>
+                <img src="./images/apricot1.png" srcset="./images/apricot1.png 1x, ./images/apricot2.png 2x" alt="apricot" class="hero-list__item-img">
+                </div>
+            </li>
+        </ul>
+        <div class="hero__absolute">
+                <picture class="hero__main-picture">
+                    <source srcset="./images/box-goodies1.png 1x, ./images/box-goodies2.png 2x" class="hero__main-source">
+                </picture>
+                <img src="./images/box-goodies1.png" srcset="./images/box-goodies1.png 1x, ./images/box-goodies2.png 2x" alt="box with goodies" class="hero__main-img">
+                </div>
+                <button type="button" class="hero__button">Start now</button>
+    </section>
+        <section class="works"></section>
+        <section class="month"></section>
+        <section class="mission"></section>
+        <section class="recent"></section>
+        <section class="blog"></section>
+        <section class="inbox"></section>
+        <section class="clients"></section>
+        <section class="contacts"></section>
+    </main>
+    <footer class="footer"></footer>
+
+    <div class="backdrop">
+        <div class="modal"></div>
+    </div>
+    <script src="./"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+</body>
+</html>
