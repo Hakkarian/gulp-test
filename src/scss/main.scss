@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #696969;
+    background-color: #fff;
+}
+
+
+
+h2 {
+    font-family: 'Bebas Neue';
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000;
+}
+
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+
+    @media screen and (min-width: 320px) {
+        width: 320px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+    @media screen and (min-width: 1280px) {
+        width: 1280px;
+    }
+}
+
+header > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+address {
+    font-style: normal;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.is-hidden {
+    opacity: 0;
+    backface-visibility: hidden;
+    position: absolute;
+    pointer-events: none;
+}
+
+header {
+    padding-top: 1.5rem;
+    padding-bottom: 1.56rem;
+    width: 20rem;
+}
+.header__logo-wrap {
+
+}
+.nav {
+}
+.nav__list {
+}
+.nav-list__item {
+}
+.nav-list__link {
+}
+.nav__logo {
+}
+.nav-logo__picture {
+}
+.nav-logo__source {
+}
+.nav-logo__img {
+}
+.nav-list__item-link {
+}
+.menu-open {
+}
+.menu-open__icon {
+}
+.menu-close {
+}
+.is-hidden {
+}
+.nav-menu {
+}
+.nav-menu__modal {
+}
+.nav-menu__list {
+}
+.nav-menu__list-item {
+}
+.nav-menu__item-link {
+}
+.svg-wrap {
+}
+.reusable-line {
+}
+.hero {
+}
+.hero-title {
+}
+.hero-title--styled {
+    font-family: 'Galada', sans-serif;
+    color: #fff;
+}
+.hero__absolute {
+}
+.hero__main-picture {
+}
+.hero__main-source {
+}
+.hero__main-img {
+}
+.hero__button {
+}
+.works {
+}
+.works-title {
+}
+.works-list {
+}
+.works-list__item {
+}
+.works-list__absolute {
+}
+.works-list__item-picture {
+}
+.works-list__item-source {
+}
+.works-list__item-img {
+}
+.works-list__item-title {
+}
+.works-list__item-text {
+}
+.month {
+}
+.month-title {
+}
+.month-text {
+}
+.month-list {
+}
+.month-list__item {
+}
+.month-list__picture-wrap {
+}
+.month-list__item-picture {
+}
+.month-list__item-source {
+}
+.month-list__item-img {
+}
+.month-button {
+}
+.mission {
+}
+.mission-text {
+}
+.mission-title {
+}
+.mission-title-smaller {
+}
+.mission__image-wrap {
+}
+.mission__picture {
+}
+.mission__source {
+}
+.mission__img {
+}
+.recent {
+}
+.recent-list {
+}
+.recent-list__item {
+}
+.recent-list__absolute {
+}
+.recent-list__item-picture {
+}
+.recent-list__item-source {
+}
+.recent-list__item-img {
+}
+.blog {
+}
+.blog-title {
+}
+.blog__image-wrap {
+}
+.blog__picture {
+}
+.blog__source {
+}
+.blog__img {
+}
+.inbox {
+}
+.inbox-text {
+}
+.inbox-title-smaller {
+}
+.inbox__image-wrap {
+}
+.inbox__images-picture {
+}
+.inbox__images-source {
+}
+.inbox-title {
+}
+.clients {
+}
+.clients-text {
+}
+.clients-title {
+}
+.clients-card {
+}
+.clients-card__subcard {
+}
+.quotes-icon {
+}
+.clients-card__image-wrap {
+}
+.clients-card__picture {
+}
+.clients-card__source {
+}
+.clients-card__img {
+}
+.card-title {
+}
+.card-list {
+}
+.card-list__item {
+}
+.card-list__star-icon {
+}
+.clients-subcard__span-wrap {
+}
+.clients-card__text-wrap {
+}
+.clients-card__text {
+}
+.clients-card__buttons-list {
+}
+.buttons-list__item {
+}
+.buttons-list__item-button {
+}
+.card-list2__arrow-icon {
+}
+.contacts {
+}
+.contacts__image-wrap {
+}
+.contacts__image-link {
+}
+.contacts__picture {
+}
+.contacts__source {
+}
+.contacts__logo {
+}
+.contacts-nav {
+}
+.contacts-list {
+}
+.contacts-list__item {
+}
+.contacts-list__item-link {
+}
+.contacts-list2 {
+}
+.contacts-list2__item {
+}
+.contacts-list2__item-link {
+}
+.footer {
+}
+.footer-year {
+}
+.footer-by {
+}
+.footer-icon {
+}
+.backdrop {
+}
+.modal {
+}
+
+
+

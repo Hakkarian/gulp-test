@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="styles.css" rel="stylesheet" />
+    <link href="../dist/css/main.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container nav">
-            <nav class="nav">
+            <nav class="nav is-hidden">
                 <ul class="nav__list">
                     <li class="nav-list__item"><a href="/" class="nav-list__link">Home</a></li>
                 <li class="nav-list__item"><a href="/" class="nav-list__link">Boxes</a></li>
@@ -25,18 +31,34 @@
                 <li class="nav-list__item"><a href="/" class="nav-list__item-link">Account</a></li>
             </ul>
             </nav>
-            <button class="menu-open"><span>Open</span></button>
-            <button class="menu-close is-hidden"><span>Close</span></button>
+            <div class="header__logo-wrap">
+                <a href="/" class="nav__logo">
+                    <picture class="nav-logo__picture">
+                    <source srcset="./images/logo1.png 1x, ./images/logo2.png 2x" class="nav-logo__source">
+                </picture>
+                <img src="./images/logo1.png" srcset="./images/logo1.png 1x, ./images/logo2.png 2x" alt="logo" class="nav-logo__img">
+                </a>
+            </div>
+
+            <div class="header__button-wrap">
+            <button type="button" class="menu-open"><svg class="menu-open__icon" width="1rem" height="1rem" aria-label="mobile menu switcher"><use href="./svg/icons.svg#icon-hamburger-menu"></use></svg></button>
+            <button type="button" class="menu-close is-hidden"><svg class="menu-open__icon" width="1rem" height="1rem" aria-label="mobile menu switcher"><use href="./svg/icons.svg#icon-close"></use></svg></button>
+            </div>
         </div>
         <div class="nav-menu is-hidden">
             <div class="container">
                 <nav class="nav-menu__modal">
                     <ul class="nav-menu__list">
-                        <li class="nav-menu__list-item"><a href="/" class="nav-menu__item-link">Home</li>
-                        <li class="nav-menu__list-item"><a href="/" class="nav-menu__item-link">What's inside</a></li>
-                        <li class="nav-menu__list-item"><a href="/" class="nav-menu__item-link">Kiwi eco box</a></li>
-                        <li class="nav-menu__list-item"><a href="/" class="nav-menu__item-link">About</a></li>
-                        <li class="nav-menu__list-item"><a href="/" class="nav-menu__item-link">Account</a></li>
+                        <li class="nav-menu__list-item"><a href="/" class="nav-menu__item-link">Home</a>
+                        <div class="svg-wrap"><object data="./svg/reuseline.svg" width="3.75rem" height="0.312rem" class="reusable-line"></object></div></li>
+                        <li class="nav-menu__list-item"><a href="/" class="nav-menu__item-link">What's inside</a>
+                        <div class="svg-wrap"><object data="./svg/reuseline.svg" width="3.75rem" height="0.312rem" class="reusable-line"></object></div></li>
+                        <li class="nav-menu__list-item"><a href="/" class="nav-menu__item-link">Kiwi eco box</a>
+                        <div class="svg-wrap"><object data="./svg/reuseline.svg" width="3.75rem" height="0.312rem" class="reusable-line"></object></div></li>
+                        <li class="nav-menu__list-item"><a href="/" class="nav-menu__item-link">About</a>
+                        <div class="svg-wrap"><object data="./svg/reuseline.svg" width="3.75rem" height="0.312rem" class="reusable-line"></object></div></li>
+                        <li class="nav-menu__list-item"><a href="/" class="nav-menu__item-link">Account</a>
+                        <div class="svg-wrap"><object data="./svg/reuseline.svg" width="3.75rem" height="0.312rem" class="reusable-line"></object></div></li>
                     </ul>
                 </nav>
             </div>
@@ -45,41 +67,7 @@
     <main>
         <section class="hero">
             <h1 class="hero-title">Everything You Need </h1>
-        <h2 class="hero-title-smaller">to Start Living Zero-Waste</h2>
-        <ul class="hero-list">
-            <li class="hero-list__item">
-                <div class="hero-list__absolute">
-                <picture class="hero-list__item-picture">
-                    <source srcset="./images/wood1.png 1x, ./images/wood2.png 2x" class="hero-list__item-source">
-                </picture>
-                <img src="./images/wood1.png" srcset="./images/wood1.png 1x, ./images/wood2.png 2x" alt="wooden" class="hero-list__item-img">
-                </div>
-            </li>
-            <li class="hero-list__item">
-                <div class="hero-list__absolute">
-                <picture class="hero-list__item-picture">
-                    <source srcset="./images/ladder1.png 1x, ./images/ladder2.png 2x" class="hero-list__item-source">
-                </picture>
-                <img src="./images/ladder1.png" srcset="./images/ladder1.png 1x, ./images/ladder2.png 2x" alt="ladder" class="hero-list__item-img">
-                </div>
-            </li>
-            <li class="hero-list__item">
-                <div class="hero-list__absolute">
-                <picture class="hero-list__item-picture">
-                    <source srcset="./images/white1.png 1x, ./images/white2.png 2x" class="hero-list__item-source">
-                </picture>
-                <img src="./images/white1.png" srcset="./images/white1.png 1x, ./images/white2.png 2x" alt="sack" class="hero-list__item-img">
-                </div>
-            </li>
-            <li class="hero-list__item">
-                <div class="hero-list__absolute">
-                <picture class="hero-list__item-picture">
-                    <source srcset="./images/apricot1.png 1x, ./images/apricot2.png 2x" class="hero-list__item-source">
-                </picture>
-                <img src="./images/apricot1.png" srcset="./images/apricot1.png 1x, ./images/apricot2.png 2x" alt="apricot" class="hero-list__item-img">
-                </div>
-            </li>
-        </ul>
+        <h2 class="hero-title--styled">to Start Living Zero-Waste</h2>
         <div class="hero__absolute">
                 <picture class="hero__main-picture">
                     <source srcset="./images/box-goodies1.png 1x, ./images/box-goodies2.png 2x" class="hero__main-source">
@@ -98,7 +86,8 @@
                 <img src="./images/works1-1.png" srcset="./images/works1-1.png 1x, ./images/works1-2.png 2x" alt="girl with laptop" class="works-list__item-img">
                 <h3 class="works-list__item-title">Join the movement</h3>
                 <p class="works-list__item-text">Get started by signing up for monthly subscription. We bring you an easy way to start your zero-waste journey</p>
-                </div>
+                <div class="svg-wrap"><object data="./svg/reuseline.svg" width="3.75rem" height="0.312rem" class="reusable-line"></object></div>
+            </div>
             </li>
             <li class="works-list__item">
                 <div class="works-list__absolute">
@@ -108,7 +97,9 @@
                 <img src="./images/works2-1.png" srcset="./images/works2-1.png 1x, ./images/works2-2.png 2x" alt="gift" class="works-list__item-img">
                 <h3 class="works-list__item-title">Get Your Box </h3>
                 <p class="works-list__item-text">Every month receive your box with essential products, but plastic free and safe for the environment</p>
-                </div>
+                <svg class="reusable-line" width="40" height="5" aria-label="reusable line"><use href="./svg/reuseline.svg" /></svg>
+                <div class="svg-wrap"><object data="./svg/reuseline.svg" width="3.75rem" height="0.312rem" class="reusable-line"></object></div>
+            </div>
             </li>
             <li class="works-list__item">
                 <div class="works-list__absolute">
@@ -124,6 +115,7 @@
                 <button type="button" class="hero__button">Start now</button>
             </section>
         <section class="month">
+            <div class="svg-wrap"><object data="./svg/reuseline.svg" width="3.75rem" height="0.312rem" class="reusable-line"></object></div>
             <h2 class="month-title">Box of a month</h2>
             <p class="month-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
             <ul class="month-list">
@@ -147,6 +139,7 @@
         <button type="button" class="month-button">See what's inside</button>
     </section>
         <section class="mission">
+            <div class="svg-wrap"><object data="./svg/reuseline.svg" width="3.75rem" height="0.312rem" class="reusable-line"></object></div>
             <p class="mission-text">Our mission</p>
         <h2 class="mission-title">We are here to help you live greener and more sustainably</h2>
         <h3 class="mission-title-smaller">Small steps matter</h3>
@@ -203,11 +196,13 @@
             </picture>
             <img src="./images/blog1.jpg" srcset="./images/blog1.jpg 1x, ./images/blog2.jpg 2x" alt="flowers and box" class="blog__img">
             <h4>Why KIWI Eco Box?</h4>
+            <div class="svg-wrap"><object data="./svg/reuseline.svg" width="3.75rem" height="0.312rem" class="reusable-line"></object></div>
             <p>Get started by signing up for monthly subscription. We bring you an easy way to start your zero-waste journey</p>
             <button type="button"><span>Read more</span></button>
         </div>
     </section>
         <section class="inbox">
+            <div class="svg-wrap"><object data="./svg/reuseline.svg" width="3.75rem" height="0.312rem" class="reusable-line"></object></div>
             <p class="inbox-text">Stay in the know</p>
         <h3 class="inbox-title-smaller">Hear about the latest sneak peaks and spoilers</h3>
             <div class="inbox__image-wrap">
@@ -223,56 +218,63 @@
     </section>
         <section class="clients"><p class="clients-text">What do our</p>
         <h3 class="clients-title">clients say</h3>
-        <div class="clients-card"><svg>quotes</svg>
+        <div class="clients-card">
+            <div class="clients-card__subcard">
+                <svg class="quotes-icon" width="3.1875rem" height="2.625rem"><use href="./svg/icons.svg#icon-quote" /></svg>
         <div class="clients-card__image-wrap">
             <picture class="clients-card__picture">
             <source srcset="./images/client1.jpg 1x, ./images/client2.jpg 2x" class="clients-card__source">
         </picture>
         <img src="./images/client1.jpg" srcset="./images/client1.jpg 1x, ./images/client2.jpg 2x" alt="client"class="clients-card__img">
     </div>
+    <div>
         <h4 class="card-title">Jessica T.</h4>
         <ul class="card-list">
             <li class="card-list__item">
-                <svg>
-                    <use></use>
+                <svg class="card-list__star-icon">
+                    <use href="./svg/icons.svg#icon-star" width="1rem" height="1rem"></use>
                 </svg>
             </li>
             <li class="card-list__item">
-                <svg>
-                    <use></use>
+                <svg class="card-list__star-icon">
+                    <use href="./svg/icons.svg#icon-star" width="1rem" height="1rem"></use>
                 </svg>
             </li>
             <li class="card-list__item">
-                <svg>
-                    <use></use>
+                <svg class="card-list__star-icon">
+                    <use href="./svg/icons.svg#icon-star" width="1rem" height="1rem"></use>
                 </svg>
             </li>
             <li class="card-list__item">
-                <svg>
-                    <use></use>
+                <svg class="card-list__star-icon">
+                    <use href="./svg/icons.svg#icon-star" width="1rem" height="1rem"></use>
                 </svg>
             </li>
             <li class="card-list__item">
-                <svg>
-                    <use></use>
+                <svg class="card-list__star-icon">
+                    <use href="./svg/icons.svg#icon-star" width="1rem" height="1rem"></use>
                 </svg>
             </li>
         </ul>
+        <div class="clients-subcard__span-wrap"><span>5/5</span></div>
+        </div>
+        </div>
+        <div class="svg-wrap"><object data="./svg/reuseline.svg" width="3.75rem" height="0.312rem" class="reusable-line"></object></div>
         <div class="clients-card__text-wrap">
             <p class="clients-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. </p>
         </div>
         <ul class="clients-card__buttons-list">
             <li class="buttons-list__item">
                 <button class="buttons-list__item-button">
-                    <svg>
-                        <use></use>
+                    <svg class="card-list2__arrow-icon" width="0.68rem" height="0.68rem">
+                        <use href="./svg/icons.svg#icon-arrow"></use>
                     </svg>
                 </button>
             </li>
             <li class="buttons-list__item">
                 <button class="buttons-list__item-button">
-                    <svg>
-                        <use></use>
+                    <svg class="card-list2__arrow-icon" width="0.68rem" height="0.68rem" style="transform: rotate(180deg);">
+                        <use href="./svg/icons.svg#icon-arrow"></use>
                     </svg>
                 </button>
             </li>
@@ -287,90 +289,60 @@
             </picture>
         </a>
     <img src="./images/footlogo1.png" srcset="./images/footlogo1.png 1x, ./images/footlogo2.png 2x" alt="logo" class="contacts__logo"></div>
+        <nav class="contacts-nav">
         <ul class="contacts-list">
             <li class="contacts-list__item">
-                <a href="/" class="contacts-list__item-link">
-                    <svg>
-                        <use></use>
-                    </svg>
-                </a>
+                <a href="/" class="contacts-list__item-link">Home</a>
             </li>
             <li class="contacts-list__item">
-                <a href="/" class="contacts-list__item-link">
-                    <svg>
-                        <use></use>
-                    </svg>
-                </a>
+                <a href="/" class="contacts-list__item-link">What's inside</a>
             </li>
             <li class="contacts-list__item">
-                <a href="/" class="contacts-list__item-link">
-                    <svg>
-                        <use></use>
-                    </svg>
-                </a>
+                <a href="/" class="contacts-list__item-link">Kiwi Eco Box</a>
             </li>
             <li class="contacts-list__item">
-                <a href="/" class="contacts-list__item-link">
-                    <svg>
-                        <use></use>
-                    </svg>
-                </a>
+                <a href="/" class="contacts-list__item-link">About</a>
             </li>
             <li class="contacts-list__item">
-                <a href="/" class="contacts-list__item-link">
-                    <svg>
-                        <use></use>
-                    </svg>
-                </a>
+                <a href="/" class="contacts-list__item-link">Account</a>
             </li>
             <li class="contacts-list__item">
-                <a href="/" class="contacts-list__item-link">
-                    <svg>
-                        <use></use>
-                    </svg>
-                </a>
+                <a href="/" class="contacts-list__item-link">blog</a>
             </li>
             <li class="contacts-list__item">
-                <a href="/" class="contacts-list__item-link">
-                    <svg>
-                        <use></use>
-                    </svg>
-                </a>
+                <a href="/" class="contacts-list__item-link">Faq</a>
             </li>
             <li class="contacts-list__item">
-                <a href="/" class="contacts-list__item-link">
-                    <svg>
-                        <use></use>
-                    </svg>
-                </a>
+                <a href="/" class="contacts-list__item-link">CONTACT US</a>
             </li>
         </ul>
+        </nav>
         <ul class="contacts-list2">
             <li class="contacts-list2__item">
                 <a href="/" class="contacts-list2__item-link">
                     <svg>
-                        <use></use>
+                        <use href="./svg/icons.svg#icon-facebook" width="1.875rem" height="1.875rem"></use>
                     </svg>
                 </a>
             </li>
             <li class="contacts-list2__item">
                 <a href="/" class="contacts-list2__item-link">
                     <svg>
-                        <use></use>
+                        <use href="./svg/icons.svg#icon-instagram" width="1.875rem" height="1.875rem"></use>
                     </svg>
                 </a>
             </li>
             <li class="contacts-list2__item">
                 <a href="/" class="contacts-list2__item-link">
                     <svg>
-                        <use></use>
+                        <use href="./svg/icons.svg#icon-twitter" width="1.875rem" height="1.875rem"></use>
                     </svg>
                 </a>
             </li>
             <li class="contacts-list2__item">
                 <a href="/" class="contacts-list2__item-link">
                     <svg>
-                        <use></use>
+                        <use href="./svg/icons.svg#icon-youtube" width="1.875rem" height="1.875rem"></use>
                     </svg>
                 </a>
             </li>
@@ -378,17 +350,17 @@
     </section>
     </main>
     <footer class="footer">
-        <p class="footer-year">Kiwi Eco Box © 2021</p>
+        <p class="footer-year">Kiwi Eco Box © 1rem21</p>
         <p class="footer-by">Development by SheepFish</p>
-        <svg>
-            <use></use>
+        <svg class="footer-icon" width="2.375rem" height="1.875rem">
+            <use href="./svg/icons.svg#icon-sheepfish"></use>
         </svg>
 </footer>
 
     <div class="backdrop">
         <div class="modal"></div>
     </div>
-    <script src="./"></script>
+    <script src="../dist/js/modal.js" type="module" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
 </body>
 </html>
