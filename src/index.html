@@ -7,29 +7,23 @@
     <link href="css\main.css" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Galada&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500;600;700&family=Bebas+Neue&family=Galada&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;500;600;700&family=Bebas+Neue&family=Galada&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="gray-block"><span>Browser</span></div>
         <div class="container nav">
             <div class="header-wrap">
-            <nav class="nav is-hidden">
+            <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav-list__item"><a href="/" class="nav-list__link">Home</a></li>
-                <li class="nav-list__item"><a href="/" class="nav-list__link">Boxes</a></li>
+                    <li class="nav-list__item"><a href="/" class="nav-list__item-link">Home</a></li>
+                <li class="nav-list__item"><a href="/" class="nav-list__item-link">Boxes</a></li>
             </ul>
                 <a href="/" class="nav__logo">
                     <picture class="nav-logo__picture">
                     <source srcset="./images/logo1.png 1x, ./images/logo2.png 2x" class="nav-logo__source">
                 </picture>
-                <img src="./images/logo1.png" srcset="./images/logo1.png 1x, ./images/logo2.png 2x" alt="logo" class="nav-logo__img">
+                <img src="./images/logo2.png" alt="logo" class="nav-logo__img">
                 </a>
                 <ul class="nav__list">
                     <li class="nav-list__item"><a href="/" class="nav-list__item-link">About</a></li>
@@ -37,7 +31,7 @@
             </ul>
             </nav>
             <div class="header__logo-wrap">
-                <a href="/" class="nav__logo">
+                <a href="/" class="mob-nav__logo">
                     <picture class="nav-logo__picture">
                     <source srcset="./images/logo1.png 1x, ./images/logo2.png 2x" class="nav-logo__source">
                 </picture>
@@ -46,8 +40,8 @@
             </div>
 
             <div class="header__button-wrap">
-            <button type="button" class="menu-open is-hidden-button"><svg class="menu-open__icon" width="1rem" height="1rem" aria-label="mobile menu switcher"><use href="./svg/icons.svg#icon-hamburger-menu"></use></svg></button>
-            <button type="button" class="menu-close"><svg class="menu-open__icon" width="1rem" height="1rem" aria-label="mobile menu switcher"><use href="./svg/icons.svg#icon-close"></use></svg></button>
+            <button type="button" class="menu-open"><svg class="menu-open__icon" width="1rem" height="1rem" aria-label="mobile menu switcher"><use href="./svg/icons.svg#icon-hamburger-menu"></use></svg></button>
+            <button type="button" class="menu-close is-hidden-button"><svg class="menu-open__icon" width="1rem" height="1rem" aria-label="mobile menu switcher"><use href="./svg/icons.svg#icon-close"></use></svg></button>
             </div>
         </div>
     </header>
@@ -62,10 +56,9 @@
                 </picture>
                 <img src="./images/box-goodies1.png" srcset="./images/box-goodies1.png 1x, ./images/box-goodies2.png 2x" alt="box with goodies" class="hero__main-img">
                 </div>
-                <button type="button" class="hero__button button"><span>Start now</span></button>
+                <!-- <button type="button" class="hero__button button"><span>Start now</span></button> -->
         </div>
         <div class="mob-menu is-hidden">
-            <div class="container">
                 <nav class="mob-menu__modal">
                     <ul class="mob-menu__list">
                         <li class="mob-menu__list-item"><a href="/" class="mob-menu__item-link">Home</a>
@@ -78,11 +71,13 @@
                         <div class="svg-wrap"><object data="./svg/reuseline.svg" class="reusable-line"></object></div></li>
                         <li class="mob-menu__list-item"><a href="/" class="mob-menu__item-link">Account</a>
                     </ul>
+                    <div class="svg-wrap"><object data="./svg/bagel.svg" class="mob-absolute__bagel"></object></div>
+                    <div class="svg-wrap"><object data="./svg/blue-bagel.svg" class="mob-absolute__blue-bagel"></object></div>
                 </nav>
-            </div>
+                <div class="mob-menu__gray-block gray-block"><span>Browser</span></div>
         </div>
     </section>
-        <section class="works">
+        <!-- <section class="works">
             <div class="container">
             <h3 class="works-title">How it Works</h3>
         <ul class="works-list">
@@ -121,8 +116,8 @@
         </ul>
                 <button type="button" class="works__button button"><span>Get the Box</span></button>
                 </div>
-            </section>
-        <section class="month">
+            </section> -->
+        <!-- <section class="month">
             <div class="container">
             <div class="month__svg-wrap"><object data="./svg/reuseline.svg" width="3.75rem" height="0.312rem" class="reusable-line"></object></div>
             <h2 class="month-title">Box of a month</h2>
@@ -143,12 +138,15 @@
                     </picture>
                     <img src="./images/month2-1.jpg" srcset="./images/month2-1.jpg 1x, ./images/month2-2.jpg 2x" alt="unboxing2" class="month-list__item-img">
                 </div>
+                <div class="month-absolute__light-ellipse"><object data="./svg/month-ellipse.svg" class="month-absolute__light-ellipse"></object></div>
+                <div class="month-absolute__blue-ellipse"><object data="./svg/month-blue-ellipse.svg" class="month-absolute__blue-ellipse"></object></div>
             </li>
         </ul>
         <button type="button" class="month-button button">See what's inside</button>
         </div>
-    </section>
-        <section class="mission">
+    </section> -->
+        <!-- <section class="mission">
+            <div class="container">
             <div class="mission__svg-wrap"><object data="./svg/reuseline.svg" width="3.75rem" height="0.312rem" class="reusable-line"></object></div>
             <p class="mission-text">Our mission</p>
         <h2 class="mission-title">We are here to help you live greener and more sustainably</h2>
@@ -159,10 +157,12 @@
             </picture>
             <img src="./images//feet1-1.png" srcset="./images/feet1-1.png 1x, ./images/feet1-2.png 2x" alt="feet" class="mission__img">
         </div>
-    </section>
-        <section class="recent">
-            <p>Join the conversation an help us create a new world!</p>
-        <h3>Recent Posts</h3>
+        </div>
+    </section> -->
+        <!-- <section class="recent">
+            <div class="container">
+            <p class="recent__text">Join the conversation an help us create a new world!</p>
+        <h3 class="recent__title">Recent Posts</h3>
         <ul class="recent-list">
             <li class="recent-list__item">
                 <div class="recent-list__absolute">
@@ -197,22 +197,33 @@
                 </div>
             </li>
         </ul>
-    </section>
-        <section class="blog">
+        </div>
+    </section> -->
+        <!-- <section class="blog">
+            <div class="container">
             <h3 class="blog-title">What's new in blog?</h3>
-        <div class="blog__image-wrap">
+        <div class="blog__card">
+            <div class="blog__image-wrap">
             <picture class="blog__picture">
                 <source class="blog__source" srcset="./images/blog1.jpg 1x, ./images/blog2.jpg 2x" class="blog__source">
             </picture>
             <img src="./images/blog1.jpg" srcset="./images/blog1.jpg 1x, ./images/blog2.jpg 2x" alt="flowers and box" class="blog__img">
-            <h4>Why KIWI Eco Box?</h4>
-            <div class="svg-wrap"><object data="./svg/reuseline.svg" width="3.75rem" height="0.312rem" class="reusable-line"></object></div>
-            <p>Get started by signing up for monthly subscription. We bring you an easy way to start your zero-waste journey</p>
-            <button type="button"><span>Read more</span></button>
+            </div>
+            <div class="blog__text-wrap">
+            <h4 class="blog-title-smaller">Why KIWI Eco Box?</h4>
+            <div class="blog__svg-wrap"><object data="./svg/reuseline.svg" width="3.75rem" height="0.312rem" class="reusable-line"></object></div>
+            <p class="blog-text">Get started by signing up for monthly subscription. We bring you an easy way to start your zero-waste journey</p>
+            <button type="button" class="blog__button"><span>Read more</span><div class="blog__plus-wrap"><svg class="blog__plus-icon" width="0.5rem" height="0.5rem"><use href="./svg/icons.svg#icon-plus" /></svg></div></button>
+            </div>
         </div>
-    </section>
-        <section class="inbox">
-            <div class="svg-wrap"><object data="./svg/reuseline.svg" width="3.75rem" height="0.312rem" class="reusable-line"></object></div>
+        <ul class="blog__lines-list"><li class="blog__lines-item"><div class="blog__lines-line"></div></li>
+        <li class="blog__lines-item"><div class="blog__lines-line"></div></li>
+        <li class="blog__lines-item"><div class="blog__lines-line"></div></li></ul>
+        </div>
+    </section> -->
+        <!-- <section class="inbox">
+            <div class="container">
+            <div class="inbox__svg-wrap"><object data="./svg/reuseline.svg" width="3.75rem" height="0.312rem" class="reusable-line"></object></div>
             <p class="inbox-text">Stay in the know</p>
         <h3 class="inbox-title-smaller">Hear about the latest sneak peaks and spoilers</h3>
             <div class="inbox__image-wrap">
@@ -221,66 +232,66 @@
         </picture>
         <img src="./images/sneak1.png" srcset="./images/sneak1.png 1x, ./images/sneak2.png 2x" alt="box with goodies">
     </div>
-    <h2 class="inbox-title">get CAUSEBOX delivered directly to your inbox!</h2>
-    <input type="email" placeholder="You email adress">
-    <button type="button"><span>Sign up</span></button>
-    <p>By clicking "sign up" you agree to receive emails from CAUSEBOX and accept our web terms of use and privacy and cookie policy</p>
-    </section>
-        <section class="clients"><p class="clients-text">What do our</p>
+    <h2 class="inbox-title">get CAUSEBOX delivered directly <span>to your inbox!</span></h2>
+    <input type="email" placeholder="You email adress" class="inbox-input works-list__item--gradient-border">
+    <button type="button" class="inbox-button button"><span>Sign up</span></button>
+    <p class="inbox__policy-text">By clicking "sign up" you agree to receive emails from CAUSEBOX and accept our web terms of use and privacy and cookie policy</p>
+    </div>
+    </section> -->
+        <!-- <section class="clients">
+            <div class="container">
+            <p class="clients-text">What do our</p>
         <h3 class="clients-title">clients say</h3>
         <div class="clients-card">
             <div class="clients-card__subcard">
-                <svg class="quotes-icon" width="3.1875rem" height="2.625rem"><use href="./svg/icons.svg#icon-quote" /></svg>
+                <div class="clients-subcard__quotes-absolute"><svg class="quotes-icon" width="3.1875rem" height="2.625rem"><use href="./svg/icons.svg#icon-quote" /></svg></div>
         <div class="clients-card__image-wrap">
             <picture class="clients-card__picture">
             <source srcset="./images/client1.jpg 1x, ./images/client2.jpg 2x" class="clients-card__source">
         </picture>
         <img src="./images/client1.jpg" srcset="./images/client1.jpg 1x, ./images/client2.jpg 2x" alt="client"class="clients-card__img">
     </div>
-    <div>
-        <h4 class="card-title">Jessica T.</h4>
+    <div class="clients-card__subcard-info">
+        <h4 class="card-username">Jessica T.</h4>
+        <div class="clients-card__subcard-rating">
         <ul class="card-list">
             <li class="card-list__item">
-                <svg class="card-list__star-icon">
-                    <use href="./svg/icons.svg#icon-star" width="1rem" height="1rem"></use>
+                <svg class="card-list__star-icon" width="1rem" height="1rem">
+                    <use href="./svg/icons.svg#icon-star"></use>
                 </svg>
             </li>
             <li class="card-list__item">
-                <svg class="card-list__star-icon">
-                    <use href="./svg/icons.svg#icon-star" width="1rem" height="1rem"></use>
+                <svg class="card-list__star-icon" width="1rem" height="1rem">
+                    <use href="./svg/icons.svg#icon-star"></use>
                 </svg>
             </li>
             <li class="card-list__item">
-                <svg class="card-list__star-icon">
-                    <use href="./svg/icons.svg#icon-star" width="1rem" height="1rem"></use>
+                <svg class="card-list__star-icon" width="1rem" height="1rem">
+                    <use href="./svg/icons.svg#icon-star"></use>
                 </svg>
             </li>
             <li class="card-list__item">
-                <svg class="card-list__star-icon">
-                    <use href="./svg/icons.svg#icon-star" width="1rem" height="1rem"></use>
+                <svg class="card-list__star-icon" width="1rem" height="1rem">
+                    <use href="./svg/icons.svg#icon-star"></use>
                 </svg>
             </li>
             <li class="card-list__item">
-                <svg class="card-list__star-icon">
-                    <use href="./svg/icons.svg#icon-star" width="1rem" height="1rem"></use>
+                <svg class="card-list__star-icon" width="1rem" height="1rem">
+                    <use href="./svg/icons.svg#icon-star"></use>
                 </svg>
             </li>
         </ul>
         <div class="clients-subcard__span-wrap"><span>5/5</span></div>
         </div>
         </div>
-        <div class="svg-wrap"><object data="./svg/reuseline.svg" width="3.75rem" height="0.312rem" class="reusable-line"></object></div>
-        <div class="clients-card__text-wrap">
-            <p class="clients-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud. </p>
         </div>
+        <div class="clients__svg-wrap"><object data="./svg/reuseline.svg" width="3.75rem" height="0.312rem" class="reusable-line"></object></div>
+        <div class="clients-card__text-wrap">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <p>Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+        </div>
+        <div class="fade"></div>
         <ul class="clients-card__buttons-list">
-            <li class="buttons-list__item">
-                <button class="buttons-list__item-button">
-                    <svg class="card-list2__arrow-icon" width="0.68rem" height="0.68rem">
-                        <use href="./svg/icons.svg#icon-arrow"></use>
-                    </svg>
-                </button>
-            </li>
             <li class="buttons-list__item">
                 <button class="buttons-list__item-button">
                     <svg class="card-list2__arrow-icon" width="0.68rem" height="0.68rem" style="transform: rotate(180deg);">
@@ -288,17 +299,27 @@
                     </svg>
                 </button>
             </li>
+            <li class="buttons-list__item">
+                <button class="buttons-list__item-button">
+                    <svg class="card-list2__arrow-icon" width="0.68rem" height="0.68rem" >
+                        <use href="./svg/icons.svg#icon-arrow"></use>
+                    </svg>
+                </button>
+            </li>
         </ul>
         </div>
-    </section>
-        <section class="contacts">
+        </div>
+    </section> -->
+        <!-- <section class="contacts">
+            <div class="contacts-container container">
             <div class="contacts__image-wrap">
                 <a href="/" class="contacts__image-link">
-            <picture class="contacts__picture" class="contacts__picture">
+                    <picture class="contacts__picture" class="contacts__picture">
                 <source srcset="./images/footlogo1.png 1x, ./images/footlogo2.png 2x" class="contacts__source">
-            </picture>
-        </a>
-    <img src="./images/footlogo1.png" srcset="./images/footlogo1.png 1x, ./images/footlogo2.png 2x" alt="logo" class="contacts__logo"></div>
+                    </picture>
+                </a>
+                <img src="./images/footlogo1.png" srcset="./images/footlogo1.png 1x, ./images/footlogo2.png 2x" alt="logo" class="contacts__logo">
+            </div>
         <nav class="contacts-nav">
         <ul class="contacts-list">
             <li class="contacts-list__item">
@@ -330,41 +351,44 @@
         <ul class="contacts-list2">
             <li class="contacts-list2__item">
                 <a href="/" class="contacts-list2__item-link">
-                    <svg>
-                        <use href="./svg/icons.svg#icon-facebook" width="1.875rem" height="1.875rem"></use>
+                    <svg width="1.875rem" height="1.875rem" class="contacts-list2__svg-wrap">
+                        <use href="./svg/icons.svg#icon-facebook" ></use>
                     </svg>
                 </a>
             </li>
             <li class="contacts-list2__item">
                 <a href="/" class="contacts-list2__item-link">
-                    <svg>
-                        <use href="./svg/icons.svg#icon-instagram" width="1.875rem" height="1.875rem"></use>
+                    <svg width="1.875rem" height="1.875rem" class="contacts-list2__svg-wrap">
+                        <use href="./svg/icons.svg#icon-instagram"></use>
                     </svg>
                 </a>
             </li>
             <li class="contacts-list2__item">
                 <a href="/" class="contacts-list2__item-link">
-                    <svg>
-                        <use href="./svg/icons.svg#icon-twitter" width="1.875rem" height="1.875rem"></use>
+                    <svg width="1.875rem" height="1.875rem" class="contacts-list2__svg-wrap">
+                        <use href="./svg/icons.svg#icon-twitter" width="1.875rem"></use>
                     </svg>
                 </a>
             </li>
             <li class="contacts-list2__item">
                 <a href="/" class="contacts-list2__item-link">
-                    <svg>
-                        <use href="./svg/icons.svg#icon-youtube" width="1.875rem" height="1.875rem"></use>
+                    <svg width="1.875rem" height="1.875rem" class="contacts-list2__svg-wrap">
+                        <use href="./svg/icons.svg#icon-youtube"></use>
                     </svg>
                 </a>
             </li>
         </ul>
-    </section>
+        </div>
+    </section> -->
     </main>
     <footer class="footer">
-        <p class="footer-year">Kiwi Eco Box © 1rem21</p>
-        <p class="footer-by">Development by SheepFish</p>
-        <svg class="footer-icon" width="2.375rem" height="1.875rem">
+        <!-- <div class="footer-container container">
+            <div class="footer-year"><p class="footer-year">Kiwi Eco Box © 2021</p></div>
+            <div class="footer-by"><p class="footer-by">Development by SheepFish</p></div>
+            <div class="footer__svg-wrap"><svg class="footer-icon" width="2.375rem" height="1.875rem">
             <use href="./svg/icons.svg#icon-sheepfish"></use>
-        </svg>
+        </svg></div>
+        </div> -->
 </footer>
 
     <div class="backdrop">
