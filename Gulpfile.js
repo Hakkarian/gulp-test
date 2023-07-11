@@ -44,14 +44,14 @@ gulp.task("images", () =>
   gulp
     .src("src/images/*")
     .pipe(imagemin())
-    .pipe(gulp.dest("dist/images").pipe(browserSync.stream()))
+    .pipe(gulp.dest("dist/images"))
 );
 
 gulp.task("desk-images", () =>
   gulp
     .src("src/images/desktop/*")
     .pipe(imagemin())
-    .pipe(gulp.dest("dist/images/desktop").pipe(browserSync.stream()))
+    .pipe(gulp.dest("dist/images/desktop"))
 );
 
 gulp.task("svg", () =>

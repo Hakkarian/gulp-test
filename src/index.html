@@ -21,9 +21,9 @@
             </ul>
                 <a href="/" class="nav__logo">
                     <picture class="nav-logo__picture">
-                    <source srcset="./images/logo1.png 1x, ./images/logo2.png 2x" class="nav-logo__source">
+                    <source srcset="./images/logo1.png 1x, ./images/logo2.png 2x" media="(max-width: 850px)" class="nav-logo__source">
+                    <img src="./images/logo2.png" alt="logo" class="nav-logo__img">
                 </picture>
-                <img src="./images/logo2.png" alt="logo" class="nav-logo__img">
                 </a>
                 <ul class="nav__list">
                     <li class="nav-list__item"><a href="/" class="nav-list__item-link">About</a></li>
@@ -35,7 +35,7 @@
                     <picture class="nav-logo__picture">
                     <source srcset="./images/logo1.png 1x, ./images/logo2.png 2x" class="nav-logo__source">
                 </picture>
-                <img src="./images/logo1.png" srcset="./images/logo1.png 1x, ./images/logo2.png 2x" alt="logo" class="nav-logo__img">
+                <img src="./images/logo2.png" srcset="./images/logo1.png 1x, ./images/logo2.png 2x" alt="logo" class="nav-logo__img">
                 </a>
             </div>
 
@@ -47,29 +47,32 @@
     </header>
     <main>
         <section class="hero">
-            <div class="container hero">
+            <div class="container hero center">
             <h1 class="hero-title">Everything You Need </h1>
-        <h2 class="hero-title--styled">to Start Living Zero-Waste</h2>
+        <div class="hero-title__mob"><h2 class="hero-title--styled">to Start Living Zero-Waste</h2></div>
+        <div class="hero-title__abs hero-title__abs--absolute"><h2 class="hero-title--styled">to Start Living</h2></div>
+        <div class="hero-title__abs hero-title__abs--absolute2"><h2 class="hero-title--styled">Zero-Waste</h2></div>
         <div class="hero__absolute">
                 <picture class="hero__main-picture">
-                    <source srcset="./images/box-goodies1.png 1x, ./images/box-goodies2.png 2x" class="hero__main-source">
+                    <source srcset="./images/box-goodies1.png 1x, ./images/box-goodies2.png 2x" media="(max-width: 41.625rem)" class="hero__main-source">
+                    <source srcset="./images/desktop/deskbox-goodies1.png 1x, ./images/desktop/deskbox-goodies2.png 2x" class="hero__main-source">
+                    <img src="./images/desktop/deskbox-goodies1.png" srcset="./images/desktop/deskbox-goodies1.png 1x, ./images/desktop/deskbox-goodies2.png 2x" class="hero__main-source"  alt="box with goodies" class="hero__main-img">
                 </picture>
-                <img src="./images/box-goodies1.png" srcset="./images/box-goodies1.png 1x, ./images/box-goodies2.png 2x" alt="box with goodies" class="hero__main-img">
                 </div>
                 <!-- <button type="button" class="hero__button button"><span>Start now</span></button> -->
         </div>
         <div class="mob-menu is-hidden">
                 <nav class="mob-menu__modal">
                     <ul class="mob-menu__list">
-                        <li class="mob-menu__list-item"><a href="/" class="mob-menu__item-link">Home</a>
+                        <li class="mob-menu__list-item"><a href="/" target="_blank" rel="noopener noreferrer nofollow" class="mob-menu__item-link">Home</a>
                         <div class="svg-wrap"><object data="./svg/reuseline.svg" class="reusable-line"></object></div></li>
-                        <li class="mob-menu__list-item"><a href="/" class="mob-menu__item-link">What's inside</a>
+                        <li class="mob-menu__list-item"><a href="/" target="_blank" rel="noopener noreferrer nofollow" class="mob-menu__item-link">What's inside</a>
                         <div class="svg-wrap"><object data="./svg/reuseline.svg" class="reusable-line"></object></div></li>
-                        <li class="mob-menu__list-item"><a href="/" class="mob-menu__item-link">Kiwi eco box</a>
+                        <li class="mob-menu__list-item"><a href="/" target="_blank" rel="noopener noreferrer nofollow" class="mob-menu__item-link">Kiwi eco box</a>
                         <div class="svg-wrap"><object data="./svg/reuseline.svg" class="reusable-line"></object></div></li>
-                        <li class="mob-menu__list-item"><a href="/" class="mob-menu__item-link">About</a>
+                        <li class="mob-menu__list-item"><a href="/" target="_blank" rel="noopener noreferrer nofollow" class="mob-menu__item-link">About</a>
                         <div class="svg-wrap"><object data="./svg/reuseline.svg" class="reusable-line"></object></div></li>
-                        <li class="mob-menu__list-item"><a href="/" class="mob-menu__item-link">Account</a>
+                        <li class="mob-menu__list-item"><a href="/" target="_blank" rel="noopener noreferrer nofollow" class="mob-menu__item-link">Account</a>
                     </ul>
                     <div class="svg-wrap"><object data="./svg/bagel.svg" class="mob-absolute__bagel"></object></div>
                     <div class="svg-wrap"><object data="./svg/blue-bagel.svg" class="mob-absolute__blue-bagel"></object></div>
