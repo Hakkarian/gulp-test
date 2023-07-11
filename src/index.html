@@ -21,8 +21,9 @@
             </ul>
                 <a href="/" class="nav__logo">
                     <picture class="nav-logo__picture">
-                    <source srcset="./images/logo1.png 1x, ./images/logo2.png 2x" media="(max-width: 850px)" class="nav-logo__source">
-                    <img src="./images/logo2.png" alt="logo" class="nav-logo__img">
+                    <source srcset="./images/logo1.png 1x, ./images/logo2.png 2x" media="(max-width: 41.625rem)" class="nav-logo__source">
+                    <source srcset="./images/desktop/desklogo.png 1x, ./images/desktop/desklogo2.png 2x" media="(min-width: 41.626rem)" class="nav-logo__source">
+                    <img src="./images/desktop/desklogo2.png" media="(min-width: 41.626rem)" alt="logo" class="nav-logo__img">
                 </picture>
                 </a>
                 <ul class="nav__list">
@@ -56,10 +57,11 @@
                 <picture class="hero__main-picture">
                     <source srcset="./images/box-goodies1.png 1x, ./images/box-goodies2.png 2x" media="(max-width: 41.625rem)" class="hero__main-source">
                     <source srcset="./images/desktop/deskbox-goodies1.png 1x, ./images/desktop/deskbox-goodies2.png 2x" class="hero__main-source">
-                    <img src="./images/desktop/deskbox-goodies1.png" srcset="./images/desktop/deskbox-goodies1.png 1x, ./images/desktop/deskbox-goodies2.png 2x" class="hero__main-source"  alt="box with goodies" class="hero__main-img">
+                    <img src="./images/desktop/deskbox-goodies2.png" srcset="./images/desktop/deskbox-goodies1.png 1x, ./images/desktop/deskbox-goodies2.png 2x" class="hero__main-source"  alt="box with goodies" class="hero__main-img">
                 </picture>
                 </div>
-                <!-- <button type="button" class="hero__button button"><span>Start now</span></button> -->
+                <button type="button" class="hero__button button"><span>Start now</span></button>
+                <div class="hero__scroll"><p>scroll</p></div>
         </div>
         <div class="mob-menu is-hidden">
                 <nav class="mob-menu__modal">
@@ -80,16 +82,17 @@
                 <div class="mob-menu__gray-block gray-block"><span>Browser</span></div>
         </div>
     </section>
-        <!-- <section class="works">
+        <section class="works">
             <div class="container">
             <h3 class="works-title">How it Works</h3>
         <ul class="works-list">
             <li class="works-list__item works-list__item--gradient-border">
                 <div class="works-list__absolute">
                 <picture class="works-list__item-picture">
-                    <source srcset="./images/works1-1.png 1x, ./images/works1-2.png 2x" class="works-list__item-source">
+                    <source srcset="./images/works1-1.png 1x, ./images/works1-2.png 2x" media="(max-width: 41.625rem)" class="works-list__item-source">
+                    <source srcset="./images/desktop/deskworks1-1.png 1x, ./images/desktop/deskworks1-2.png 2x" media="(min-width: 41.626rem)" class="works-list__item-source">
+                    <img src="./images/desktop/deskworks1-2.png" srcset="./images/works1-1.png 1x, ./images/works1-2.png 2x" alt="girl with laptop" class="works-list__item-img">
                 </picture>
-                <img src="./images/works1-1.png" srcset="./images/works1-1.png 1x, ./images/works1-2.png 2x" alt="girl with laptop" class="works-list__item-img">
                 <h3 class="works-list__item-title">Join the movement</h3>
                 <p class="works-list__item-text">Get started by signing up for monthly subscription. We bring you an easy way to start your zero-waste journey</p>
                 <div class="works-list__svg-wrap"><object data="svg/reuseline.svg" width="3.75rem" height="0.312rem" class="reusable-line works-line"></object></div>
@@ -98,9 +101,10 @@
             <li class="works-list__item works-list__item--gradient-border">
                 <div class="works-list__absolute">
                 <picture class="works-list__item-picture">
-                    <source srcset="./images/works2-1.png 1x, ./images/works2-2.png 2x" class="works-list__item-source">
+                    <source srcset="./images/works2-1.png 1x, ./images/works2-2.png 2x" media="(max-width: 41.625rem)" class="works-list__item-source">
+                    <source srcset="./images/desktop/deskworks2-1.png 1x, ./images/desktop/deskworks2-2.png 2x" media="(min-width: 41.626rem)" class="works-list__item-source">
+                    <img src="./images/desktop/works2-2.png" srcset="./images/works2-1.png 1x, ./images/works2-2.png 2x" alt="gift" class="works-list__item-img">
                 </picture>
-                <img src="./images/works2-1.png" srcset="./images/works2-1.png 1x, ./images/works2-2.png 2x" alt="gift" class="works-list__item-img">
                 <h3 class="works-list__item-title">Get Your Box </h3>
                 <p class="works-list__item-text">Every month receive your box with essential products, but plastic free and safe for the environment</p>
                 <div class="works-list__svg-wrap"><object data="./svg/reuseline.svg" width="3.75rem" height="0.312rem" class="reusable-line works-line"></object></div>
@@ -109,45 +113,66 @@
             <li class="works-list__item">
                 <div class="works-list__absolute">
                 <picture class="works-list__item-picture">
-                    <source srcset="./images/works3-1.png 1x, ./images/works3-2.png 2x" class="works-list__item-source">
+                    <source srcset="./images/works3-1.png 1x, ./images/works3-2.png 2x" media="(max-width: 41.625rem)" class="works-list__item-source">
+                    <source srcset="./images/desktop/deskworks3-1.png 1x, ./images/desktop/deskworks3-2.png 2x" media="(min-width: 41.626rem)" class="works-list__item-source">
+                    <img src="./images/desktop/deskworks3-2.png" srcset="./images/works3-1.png 1x, ./images/works3-2.png 2x" alt="world" class="works-list__item-img">
                 </picture>
-                <img src="./images/works3-1.png" srcset="./images/works3-1.png 1x, ./images/works3-2.png 2x" alt="world" class="works-list__item-img">
+                
                 <h3 class="works-list__item-title">Make a Difference </h3>
                 <p class="works-list__item-text">Small steps can lead to bigger changes, and now you are the change. Let's build community of people who care</p>
                 </div>
             </li>
         </ul>
-                <button type="button" class="works__button button"><span>Get the Box</span></button>
+                <div class="works__button-flex"><button type="button" class="works__button button"><span>Get the Box</span></button></div>
                 </div>
-            </section> -->
-        <!-- <section class="month">
+            </section>
+        <section class="month">
             <div class="container">
             <div class="month__svg-wrap"><object data="./svg/reuseline.svg" width="3.75rem" height="0.312rem" class="reusable-line"></object></div>
             <h2 class="month-title">Box of a month</h2>
             <p class="month-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <div class="month__desk-embed">
+                    <picture>
+                        <source srcset=" ./images/desktop/desk-month-abs1.png 1x, ./images/desktop/desk-month-abs2.png 2x" media="(min-width: 41.626rem)">
+                    </picture>
+                    <img src="./images/desktop/desk-month-abs2.png" srcset=" ./images/desktop/desk-month-abs1.png 1x, ./images/desktop/desk-month-abs2.png 2x" alt="unboxing1">
+                </div>
             <ul class="month-list">
             <li class="month-list__item">
                 <div class="month-list__picture-wrap">
-                    <picture class="month-list__item-picture">
-                        <source srcset=" ./images/month1-1.jpg 1x, ./images/month1-2.jpg 2x" class="month-list__item-source">
+                    <picture>
+                        <source srcset=" ./images/month1-1.jpg 1x, ./images/month1-2.jpg 2x" media="(max-width: 41.625rem)">
+                        <source srcset=" ./images/desktop/deskmonth1-1.jpg 1x, ./images/desktop/deskmonth1-2.jpg 2x" media="(min-width: 41.626rem)">
                     </picture>
-                    <img src="./images/month1-1.jpg" srcset="./images/month1-1.jpg 1x, ./images/month1-2.jpg 2x" alt="unboxing1" class="month-list__item-img">
+                    <img src="./images/desktop/deskmonth1-2.jpg" srcset="./images/desktop/deskmonth1-1.jpg 1x, ./images/desktop/deskmonth1-2.jpg 2x" alt="unboxing1">
                 </div>
             </li>
             <li class="month-list__item">
                 <div class="month-list__picture-wrap">
                     <picture class="month-list__item-picture">
-                        <source srcset=" ./images/month2-1.jpg 1x, ./images/month2-2.jpg 2x" class="month-list__item-source">
+                        <source srcset=" ./images/month2-1.jpg 1x, ./images/month2-2.jpg 2x" media="(max-width: 41.625rem)" class="month-list__item-source">
+                        <source srcset="./images/desktop/deskmonth1-2.jpg 1x, ./images/desktop/deskmonth2-2.jpg 2x" media="(min-width: 41.626rem)">
                     </picture>
-                    <img src="./images/month2-1.jpg" srcset="./images/month2-1.jpg 1x, ./images/month2-2.jpg 2x" alt="unboxing2" class="month-list__item-img">
+                    <img src="./images/desktop/deskmonth2-2.jpg" srcset="./images/desktop/deskmonth1-2.jpg 1x, ./images/desktop/deskmonth2-2.jpg 2x" alt="unboxing2" class="month-list__item-img">
                 </div>
                 <div class="month-absolute__light-ellipse"><object data="./svg/month-ellipse.svg" class="month-absolute__light-ellipse"></object></div>
                 <div class="month-absolute__blue-ellipse"><object data="./svg/month-blue-ellipse.svg" class="month-absolute__blue-ellipse"></object></div>
             </li>
         </ul>
-        <button type="button" class="month-button button">See what's inside</button>
+        <div class="month__desk-wrap">
+            <div class="month-title__desk-wrap">
+                <div><object data="./svg/reuseline.svg" width="3.75rem" height="0.312rem" class="reusable-line"></object></div>
+            <h2 class="month__desk-title">Box of a month</h2>
         </div>
-    </section> -->
+            <p class="month__desk-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod <br /> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim <br /> veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <br /> commodo consequat. Duis aute irure dolor 
+                in reprehenderit in voluptate <br /> velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat <br /> cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id <br /> est laborum </p>
+            <button type="button" class="month__desk-button button">See what's inside</button>
+            </div>
+        <div class="month__button-wrap"><button type="button" class="month-button button">See what's inside</button></div>
+        </div>
+    </section>
         <!-- <section class="mission">
             <div class="container">
             <div class="mission__svg-wrap"><object data="./svg/reuseline.svg" width="3.75rem" height="0.312rem" class="reusable-line"></object></div>

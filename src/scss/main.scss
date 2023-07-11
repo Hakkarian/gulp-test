@@ -15,21 +15,34 @@
 
 @mixin mobile {
     @media screen and (max-width: 41.625rem) {
-        @content
-    }
-};
-@mixin tablet {
-    @media screen and (min-width: 41.626rem) and (max-width: 199.9rem) {
-        @content
+        @content;
     }
 };
 
+
+@mixin tablet {
+    @media screen and (min-width: 41.626rem) and (max-width: 199.9rem) {
+        @content;
+    }
+};
+
+@mixin maxtablet {
+    @media screen and (max-width: 87.9rem) {
+        @content;
+    }
+};
+
+@mixin mindesktop {
+    @media screen and (min-width: 80rem) {
+        @content;
+    }
+};
 
 @mixin desktop {
     @media screen and (min-width: 120rem) {
         @content
     }
-}
+};
 
 * {
     margin: 0;
@@ -469,14 +482,15 @@ img {
     padding-top: 1rem;
     padding-bottom: 1.4rem;
 
-    @include tablet {
+    @include maxtablet {
         padding-top: 3rem;
         padding-bottom: 3rem;
     }
 
-    @include desktop {
-        padding-top: 4.38rem;
-        padding-bottom: 4.38rem;
+
+    @include mindesktop {
+        padding-top: 3rem;
+        padding-bottom: 0;
     }
 }
 
@@ -524,7 +538,7 @@ img {
     }
     @include desktop {
         display: block;
-        transform: translate(120%, -320%);
+        transform: translate(120%, -390%);
     }
 }
 
@@ -538,7 +552,7 @@ img {
     }
     @include desktop {
         display: block;
-        transform: translate(120%, 70%);
+        transform: translate(120%, 60%);
     }
 }
 
@@ -575,33 +589,110 @@ img {
 
 
 .hero__button {
-    position: absolute;
-    bottom: 1rem;
+
     padding: 1.19rem 6.44rem 1.06rem 6.44rem;
+
+    @include tablet {
+        padding: 1.38rem 5.69rem 1.19rem 5.62rem;
+    }
+
+    @include desktop {
+        padding: 1.38rem 6rem 1.19rem 6rem;
+    }
+
+}
+
+.hero__scroll {
+    display: none;
+    @include mobile {
+        display: none;
+    }
+    @include mindesktop {
+        margin-right: 60.88rem;
+        margin-bottom: 3.9rem;
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+
+        color: #FFF;
+        font-size: 0.875rem;
+        font-weight: 700;
+        letter-spacing: 0.21875rem;
+        text-transform: uppercase;
+
+        transform: rotate(-90deg);
+
+        &::before {
+            content: "";
+            display: block;
+            width: 3.125rem;
+            height: 0.125rem;
+            background-color: currentColor;
+        }
+    }  
 }
 .works {
-    padding-top: 3.12rem;
-    padding-bottom: 1.88rem;
+    @include mobile {
+        padding-top: 3.12rem;
+        padding-bottom: 1.88rem;
+    }
+    @include tablet {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    @include desktop {
+        padding-top: 6.25rem;
+        padding-bottom: 6.25rem;
+    }
+}
+
+.works > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .works-title {
+    text-align: center;
     margin-bottom: 1.81rem;
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: none;
+
+    @include tablet {
+        margin-bottom: 1.19rem;
+        font-size: 2rem;
+    }
+    @include desktop {
+        margin-bottom: 1.19rem;
+        font-size: 3rem;
+    }
 }
 .works-list {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 2rem;
+
+    @include tablet {
+        flex-direction: row;
+        gap: 8rem;
+    }
+
+    @include desktop {
+        flex-direction: row;
+        gap: 11.69rem;
+    }
 }
 .works-list__item {
     position: relative;
 }
 
 .works-list__item--gradient-border {
-    border-bottom: 1px solid;
-    border-image: var(--gradient-blue) 1;
+    @include mobile {
+        border-bottom: 1px solid;
+        border-image: var(--gradient-blue) 1;
+    }
 }
 .works-list__absolute {
     display: flex;
@@ -625,13 +716,29 @@ img {
     text-align: center;
     letter-spacing: 0.05625rem;
 
-        color: #000;
+    color: #000;
+
+    @include tablet {
+        margin-top: 2rem;
+    }
+    @include desktop {
+        margin-top: 2.5rem;
+    }
 }
 .works-list__item-text {
     margin-top: 0.5rem;
     margin-bottom: 2rem;
 
     text-align: center;
+
+    @include tablet {
+        margin-top: 1rem;
+        margin-bottom: 2.5rem;
+    }
+    @include desktop {
+        margin-top: 1.25rem;
+        margin-bottom: 3.12rem;
+    }
 }
 .works-list__svg-wrap {
     display: flex;
@@ -643,31 +750,129 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, 595%);
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 3rem;
 
     background-color: #fff;
+
+    @include tablet {
+        display: none;
+    }
+    @include desktop {
+        display: none;
+    }
 }
 
 .works__button {
     padding: 1.19rem 6.16rem 1.06rem 6.16rem;
+    
+}
+
+.works__button-flex {
+        display: flex;
+        justify-content: center;
 }
 .month {
-    padding-top: 3.12rem;
-    padding-bottom: 1.88rem;
+    position: relative;
     background-color: var(--white-blue);
+
+    @include mobile {
+        padding-top: 3.12rem;
+        padding-bottom: 1.88rem;
+    }
+    @include tablet {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    @include desktop {
+        padding-top: 6.25rem;
+        padding-bottom: 6.25rem;
+    }
+}
+.month > .container {
+    @include tablet {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+    }
+    @include desktop {
+        display: flex;
+        justify-content: center;
+        gap: 6.25rem;
+    }
 }
 .month__svg-wrap {
-    display: flex;
-    justify-content: center;
+    display: none;
+    @include mobile {
+        display: flex;
+        justify-content: center;
+    }
+
+    @include tablet {
+
+    }
 }
 .month-title {
-    text-align: center;
-    margin-top: 1.25rem;
+    @include mobile {
+        text-align: center;
+        margin-top: 1.25rem;
+    }
+    @include tablet {
+        display: none;
+    }
+    @include desktop {
+        display: none;
+    }
 }
 .month-text {
-    text-align: center;
-    margin-top: 0.5rem;
-    margin-bottom: 1.06rem;
+    @include mobile {
+        text-align: center;
+        margin-top: 0.5rem;
+        margin-bottom: 1.06rem;
+    }
+    @include tablet {
+        display: none;
+    }
+    @include desktop {
+        display: none;
+    }
+}
+.month__desk-wrap {
+    @include mobile {
+        display: none;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.88rem;
+}
+
+
+.month-title__desk-wrap {
+    margin-left: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.month__desk-embed {
+    position: absolute;
+    z-index: 1;
+
+    @include mobile {
+        display: none;
+    }
+
+    @include tablet {
+        display: none;
+    }
+
+    @include desktop {
+        display: block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-195%, -58%);
+    }
 }
 .month-list {
     display: flex;
@@ -678,14 +883,35 @@ img {
 }
 .month-absolute__light-ellipse {
     position: absolute;
-    right: 1rem;
-    bottom: 1rem;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(110%, 290%);
+
+    @include tablet {
+        display: none;
+    }
+    @include desktop {
+        display: block;
+        transform: translate(200%, 500%);
+    }
 }
 .month-absolute__blue-ellipse {
     position: absolute;
-    right: 50%;
-    bottom: 50%;
-    transform: translate(170%, 300%);
+        right: 50%;
+        bottom: 50%;
+    @include mobile {
+        transform: translate(200%, 350%);
+    }
+    @include tablet {
+        display: none;
+    }
+    @include desktop {
+        display: block;
+        transform: translate(330%, 600%);
+    }
+}
+.month__desk-embed {
+    position: absolute;
 }
 .month-list__picture-wrap {
 }
@@ -694,10 +920,28 @@ img {
 .month-list__item-source {
 }
 .month-list__item-img {
+
+}
+.month__button-wrap {
+    @include mobile {
+        display: flex;
+        justify-content: center;
+    }
 }
 .month-button {
-    margin-top: 1.25rem;
-    padding: 1.19rem 4.75rem 1.06rem 4.69rem;
+    display: none;
+    @include mobile {
+        display: grid;
+        place-content: center;
+        margin-top: 1.25rem;
+        padding: 1.19rem 4.75rem 1.06rem 4.69rem;
+    }
+}
+.month__desk-button {
+    @include mobile {
+        display: none;
+    }
+    padding: 1.38rem 3.62rem 1.19rem 3.56rem;
 }
 .mission {
     padding-top: 3.38rem;
