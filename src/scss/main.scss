@@ -848,6 +848,7 @@ img {
 
 
 .month-title__desk-wrap {
+    position: relative;
     margin-left: 1.25rem;
     display: flex;
     flex-wrap: wrap;
@@ -942,6 +943,19 @@ img {
         display: none;
     }
     padding: 1.38rem 3.62rem 1.19rem 3.56rem;
+}
+.month__leaf-wrap {
+    position: relative;
+}
+.month__abs-leaf  {
+    @include mobile {
+        display: none;
+    }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: rotate(352deg) translate(50%, -20%);
+
 }
 .mission {
     padding-top: 3.38rem;
