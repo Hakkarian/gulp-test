@@ -87,6 +87,7 @@
             <h3 class="works-title">How it Works</h3>
         <ul class="works-list">
             <li class="works-list__item works-list__item--gradient-border">
+                <div><object data="./svg/works-red-bagel.svg" class="works__red-bagel"></object></div>
                 <div class="works-list__absolute">
                 <picture class="works-list__item-picture">
                     <source srcset="./images/works1-1.png 1x, ./images/works1-2.png 2x" media="(max-width: 41.625rem)" class="works-list__item-source">
@@ -111,6 +112,7 @@
             </div>
             </li>
             <li class="works-list__item">
+                <div><object data="./svg/works-blue-ellipse.svg" class="works__blue-ellipse"></object></div>
                 <div class="works-list__absolute">
                 <picture class="works-list__item-picture">
                     <source srcset="./images/works3-1.png 1x, ./images/works3-2.png 2x" media="(max-width: 41.625rem)" class="works-list__item-source">
@@ -131,6 +133,7 @@
             <div class="month__svg-wrap"><object data="./svg/reuseline.svg" width="3.75rem" height="0.312rem" class="reusable-line"></object></div>
             <h2 class="month-title">Box of a month</h2>
             <p class="month-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <div class="month-desk__img-wrap">
             <div class="month__desk-embed">
                     <picture>
                         <source srcset=" ./images/desktop/desk-month-abs1.png 1x, ./images/desktop/desk-month-abs2.png 2x" media="(min-width: 41.626rem)">
@@ -159,6 +162,7 @@
                 <div class="month-absolute__blue-ellipse"><object data="./svg/month-blue-ellipse.svg" class="month-absolute__blue-ellipse"></object></div>
             </li>
         </ul>
+        </div>
         <div class="month__desk-wrap">
             <div class="month-title__desk-wrap">
                 <div><object data="./svg/reuseline.svg" width="3.75rem" height="0.312rem" class="reusable-line"></object></div>
@@ -181,60 +185,110 @@
         
     </div>
     </section>
-        <!-- <section class="mission">
+        <section class="mission">
             <div class="container">
-            <div class="mission__svg-wrap"><object data="./svg/reuseline.svg" width="3.75rem" height="0.312rem" class="reusable-line"></object></div>
-            <p class="mission-text">Our mission</p>
-        <h2 class="mission-title">We are here to help you live greener and more sustainably</h2>
-        <h3 class="mission-title-smaller">Small steps matter</h3>
+                <div class="mission-desk__wrap">
+            <div class="mission-desk__text-wrap">
+                <div class="mission__svg-wrap"><object data="./svg/reuseline.svg" width="3.75rem" height="0.312rem" class="reusable-line"></object></div>
+                <p class="mission-text">Our mission</p>
+            </div>
+            <div class="mission-desk__title-wrap">
+        <h2 class="mission-title">We are here to help you live <br /> greener and more sustainably</h2>
+        <h3 class="mission-title-smaller gradient-blue-text">Small steps matter</h3>
+        </div>
+        </div>
         <div class="mission__image-wrap">
             <picture class="mission__picture">
-                <source class="mission__source">
+                <source class="mission__source" srcset="./images/feet1-1.png 1x, ./images/feet1-2.png 2x" media="(max-width: 41.625rem)">
+                <source class="mission__source" srcset="./images/desktop/deskhelpfeet1.png 1x, ./images/desktop/deskhelpfeet2.png 2x" media="(min-width: 41.626rem)">
+                <img src="./images/desktop/deskhelpfeet2.png" srcset="./images/desktop/deskhelpfeet1.png 1x, ./images/desktop/deskhelpfeet2.png 2x" alt="feet" class="mission__img">
             </picture>
-            <img src="./images//feet1-1.png" srcset="./images/feet1-1.png 1x, ./images/feet1-2.png 2x" alt="feet" class="mission__img">
         </div>
+        <div class="mission-desk__line-wrap"><object data="./svg/mission-dashed-line.svg" class="dashed-line"></object></div>
         </div>
-    </section> -->
-        <!-- <section class="recent">
-            <div class="container">
+    </section>
+    <section class="recent">
+    <div class="container">
+        <div class="recent-desk__title-wrap">
             <p class="recent__text">Join the conversation an help us create a new world!</p>
-        <h3 class="recent__title">Recent Posts</h3>
+            <h3 class="recent__title">Recent Posts</h3>
+        </div>
+        <div class="recent-desk__list-gallery">
         <ul class="recent-list">
-            <li class="recent-list__item">
-                <div class="recent-list__absolute">
-                <picture class="recent-list__item-picture">
-                    <source srcset="./images/recent1-1.jpg 1x, ./images/recent1-2.jpg 2x" class="recent-list__item-source">
+            <li>
+                <ul class="recent-list__list">
+                    <li class="recentdesk__item1"> 
+                        <div><object data="./svg/recent-blue-ellipse.svg" class="recent-blue-ellipse"></object></div>
+                        <div>
+                            <picture>
+                                <source srcset="./images/recent1-1.jpg 1x, ./images/recent1-2.jpg 2x" media="(max-width: 41.625rem)">
+                                <source srcset="./images/desktop/deskhelp1-1.jpg 1x, ./images/desktop/deskhelp1-2.jpg 2x" media="(min-width: 41.626rem)">
+                                <img src="./images/desktop/deskhelp1-2.jpg" srcset="./images/desktop/deskhelp1-1.jpg 1x, ./images/desktop/deskhelp1-2.jpg 2x" alt="honey bro">
+                            </picture>
+                        </div>
+                    </li>
+                    <li class="recent-list__item-list">
+                        <div>
+                            <picture>
+                                <source srcset="./images/recent3-1.jpg 1x, ./images/recent3-2.jpg 2x" media="(max-width: 41.625rem)">
+                                <source srcset="./images/desktop/deskhelp2-1.jpg 1x, ./images/desktop/deskhelp2-2.jpg 2x" media="(min-width: 41.626rem)">
+                                <img src="./images/desktop/deskhelp2-2.jpg" srcset="./images/desktop/deskhelp2-1.jpg 1x, ./images/desktop/deskhelp2-2.jpg 2x" alt="honey bro">
+                            </picture>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul class="recent-list__list">
+                    <li class="recentdesk__item1">
+                        <div>
+                            <picture>
+                                <source srcset="./images/recent2-1.jpg 1x, ./images/recent2-2.jpg 2x" media="(max-width: 41.625rem)">
+                                <source srcset="./images/desktop/deskhelp3-1.jpg 1x, ./images/desktop/deskhelp3-2.jpg 2x" media="(min-width: 41.626rem)">
+                                <img src="./images/desktop/deskhelp3-2.jpg" srcset="./images/desktop/deskhelp3-1.jpg 1x, ./images/desktop/deskhelp3-2.jpg 2x" alt="honey bro">
+                            </picture>
+                        </div>
+                    </li>
+                    <li class="recentdesk__item1">
+                        <div>
+                            <picture>
+                                <source srcset="./images/recent4-1.jpg 1x, ./images/recent4-2.jpg 2x" media="(max-width: 41.625rem)">
+                                <source srcset="./images/desktop/deskhelp4-1.jpg 1x, ./images/desktop/deskhelp4-2.jpg 2x" media="(min-width: 41.626rem)">
+                                <img src="./images/desktop/deskhelp4-2.jpg" srcset="./images/desktop/deskhelp4-1.jpg 1x, ./images/desktop/deskhelp4-2.jpg 2x" alt="kiwi box">
+                            </picture>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="recent-desk__big-photo">
+            <picture>
+                <source srcset="./images/desktop/deskhelpbig5-1.jpg 1x, ./images/desktop/deskhelpbig5-2.jpg 2x" media="(min-width: 41.626rem)">
+                <img src="./images/desktop/deskhelpbig5-2.jpg" srcset="./images/desktop/deskhelpbig5-1.jpg 1x, ./images/desktop/deskhelpbig5-2.jpg 2x" alt="wooden craftmanship">
+            </picture>
+        </div>
+        <ul class="recent-list__list">
+            <li class="recent-list__list-item">
+                <div><object data="./svg/recent-red-ellipse.svg" class="recent-red-ellipse"></object></div>
+                <div>
+                <picture>
+                    <source srcset="./images/desktop/deskhelp6-1.jpg 1x, ./images/desktop/deskhelp6-2.jpg 2x" media="(min-width: 41.626rem)">
+                    <img src="./images/desktop/deskhelp6-2.jpg" srcset="./images/desktop/deskhelp6-1.jpg 1x, ./images/desktop/deskhelp6-2.jpg 2x" alt="wooden hairbrush">
                 </picture>
-                <img src="./images/recent1-1.jpg" srcset="./images/recent1-1.jpg 1x, ./images/recent1-2.jpg 2x" alt="honey bro" class="recent-list__item-img">
                 </div>
             </li>
-            <li class="recent-list__item">
-                <div class="recent-list__absolute">
-                <picture class="recent-list__item-picture">
-                    <source srcset="./images/recent2-1.jpg 1x, ./images/recent1-2.jpg 2x" class="recent-list__item-source">
+            <li class="recent-list__list-item">
+                <div>
+                <picture>
+                    <source srcset="./images/desktop/deskhelp7-1.jpg 1x, ./images/desktop/deskhelp7-2.jpg 2x" media="(min-width: 41.626rem)">
+                    <img src="./images/desktop/deskhelp7-2.jpg" srcset="./images/desktop/deskhelp7-1.jpg 1x, ./images/desktop/deskhelp7-2.jpg 2x" alt="wooden brush">
                 </picture>
-                <img src="./images/recent2-1.jpg" srcset="./images/recent2-1.jpg 1x, ./images/recent2-2.jpg 2x" alt="kiwi box" class="recent-list__item-img">
-                </div>
-            </li>
-            <li class="recent-list__item">
-                <div class="recent-list__absolute">
-                <picture class="recent-list__item-picture">
-                    <source srcset="./images/recent3-1.jpg 1x, ./images/recent1-2.jpg 2x" class="recent-list__item-source">
-                </picture>
-                <img src="./images/recent3-1.jpg" srcset="./images/recent3-1.jpg 1x, ./images/recent3-2.jpg 2x" alt="staying on hands" class="recent-list__item-img">
-                </div>
-            </li>
-            <li class="recent-list__item">
-                <div class="recent-list__absolute">
-                <picture class="recent-list__item-picture">
-                    <source srcset="./images/recent4-1.jpg 1x, ./images/recent1-2.jpg 2x" class="recent-list__item-source">
-                </picture>
-                <img src="./images/recent4-1.jpg" srcset="./images/recent4-1.jpg 1x, ./images/recent4-2.jpg 2x" alt="thank you" class="recent-list__item-img">
                 </div>
             </li>
         </ul>
         </div>
-    </section> -->
+    </div>
+    </section>
         <!-- <section class="blog">
             <div class="container">
             <h3 class="blog-title">What's new in blog?</h3>

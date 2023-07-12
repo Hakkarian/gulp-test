@@ -75,6 +75,7 @@ h1, h2 {
     text-transform: uppercase;
 
     color: #000;
+
 }
 
 h3 {
@@ -83,6 +84,13 @@ h3 {
     font-weight: 700;
     
     color: #000;
+
+    @include tablet {
+        font-size: 2.5rem;
+    }
+    @include desktop {
+        font-size: 3rem;
+    }
 }
 
 header {
@@ -196,6 +204,12 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.gradient-blue-text {
+    background: var(--gradient-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .button {
@@ -482,11 +496,6 @@ img {
     padding-top: 1rem;
     padding-bottom: 1.4rem;
 
-    @include maxtablet {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-    }
-
 
     @include mindesktop {
         padding-top: 3rem;
@@ -686,6 +695,33 @@ img {
 }
 .works-list__item {
     position: relative;
+}
+.works__blue-ellipse {
+    display: none;
+     @include desktop {
+        display: block;
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(60%, -260%);
+
+        width: 5.0625rem;
+        height: 5.0625rem;
+     }
+}
+.works__red-bagel {
+    display: none;
+     @include desktop {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-270%, -290%);
+
+        width: 3.9375rem;
+        height: 3.9375rem;
+     }
 }
 
 .works-list__item--gradient-border {
@@ -911,8 +947,10 @@ img {
         transform: translate(330%, 600%);
     }
 }
+
 .month__desk-embed {
     position: absolute;
+
 }
 .month-list__picture-wrap {
 }
@@ -951,6 +989,7 @@ img {
     @include mobile {
         display: none;
     }
+    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -958,15 +997,67 @@ img {
 
 }
 .mission {
-    padding-top: 3.38rem;
-    padding-bottom: 1.88rem;
+    @include mobile {
+        padding-top: 3.38rem;
+        padding-bottom: 1.88rem;
+    }
+    @include tablet {
+        padding-top: 5rem;
+        padding-bottom: 6rem;
+    }
+    @include desktop {
+        padding-top: 6.25rem;
+        padding-bottom: 8.56rem;
+    }
+
+    & > .container {
+        position: relative;
+
+        @include tablet {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+            gap: 2.81rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            
+        }
+
+        @include desktop {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 2.81rem;
+            padding-left: 12rem;
+            padding-right: 12rem;
+        }
+}
+}
+
+.mission-desk__text-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.62rem;
+    @include mindesktop() {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+.mission-desk__title-wrap {
+    position: relative;
 }
 .mission__svg-wrap {
     display: flex;
     justify-content: center;
+    @include desktop {
+        justify-content: flex-start;
+    }
 }
 .mission-text {
-    margin-top: 0.62rem;
+
     
     text-align: center;
     font-size: 0.75rem;
@@ -975,13 +1066,46 @@ img {
     text-transform: uppercase;
 
     color: var(--main-color);
+
+    @include mindesktop {
+        font-size: 0.875rem;
+    }
 }
 .mission-title {
+    display: flex;
+    justify-content: center;
+
     margin-top: 1.25rem;
 
     line-height: 1;
+    @include tablet {
+        font-size: 3rem;
+        justify-content: flex-start;
+    }
+    @include desktop {
+        font-size: 6rem;
+        justify-content: flex-start;
+    }
 }
 .mission-title-smaller {
+    text-align: center;
+    font-family: Galada;
+    font-size: 1.625rem;
+
+    color: linear-gradient(141deg, transparent 0%, #C0E594 100%);
+
+    @include tablet {
+
+        font-size: 3rem;
+    }
+    @include desktop {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-13%, 80%);
+        font-size: 4.5rem;
+    }
 }
 .mission__image-wrap {
     display: flex;
@@ -993,10 +1117,39 @@ img {
 }
 .mission__img {
 }
+.mission-desk__line-wrap {
+    display: none;
+    @include desktop {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(180%, -60%);
+        width: 20.2055rem;
+        height: 13.91456rem;
+    }
+}
 .recent {
-    padding-top: 3.12rem;
-    padding-bottom: 1.88rem;
     background-color: var(--white-blue);
+    @include mobile {
+        padding-top: 3.38rem;
+        padding-bottom: 1.88rem;
+    }
+
+    @include tablet {
+        padding-top: 5rem;
+        padding-bottom: 6rem;
+    }
+    @include desktop {
+        padding-top: 6.25rem;
+        padding-bottom: 8.56rem;
+    }
+
+    & > .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .recent__text {
     text-align: center;
@@ -1008,14 +1161,80 @@ img {
     text-transform: uppercase;
 
     color: var(--main-color);
+
+    @include tablet {
+        font-size: 0.825rem;
+        letter-spacing: 0.11875rem;
+    }
+    @include desktop {
+        font-size: 0.875rem;
+        letter-spacing: 0.21875rem;
+    }
 }
 .recent__title {
+    text-align: center;
     margin-top: 0.62rem;
+
+    @include tablet {
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    @include desktop {
+        margin-top: 1.25rem;
+        margin-bottom: 3.12rem;
+    }
+
+}
+.recent-desk__list-gallery {
+    @include tablet {
+        display: flex;
+        gap: 0.56rem;
+    }
+    @include desktop {
+        display: flex;
+        gap: 0.56rem;
+    }
+
+    & > div, ul:not(:first-child) {
+        @include mobile {
+            display: none;
+        }
+    }
 }
 .recent-list {
     display: flex;
-    flex-wrap: wrap;
     gap: 0.5rem;
+}
+.recent-list__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.44rem;
+}
+.recent-list__list-item {
+    position: relative;
+}
+.recent-blue-ellipse {
+    display: none;
+    @include desktop {
+    display: block;
+    position: absolute;
+
+    transform: translate(-50%, -50%);
+
+    width: 4.125rem;
+    height: 4.125rem;
+    }
+}
+.recent-red-ellipse {
+    display: none;
+    @include desktop {
+        display: block;
+        position: absolute;
+        transform: translate(430%, -60%);
+
+        width: 3.0625rem;
+        height: 3.0625rem;
+    }
 }
 .recent-list__item {
 }
