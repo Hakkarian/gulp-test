@@ -619,10 +619,23 @@
         </div>
         </div>
 </footer>
-
-    <div class="backdrop">
-        <div class="modal"></div>
-    </div>
+    <div class="mob-subscribe is-hidden">
+            <div class="mob-subscribe__modal">
+                <div class="mob-subscribe__image-wrap">
+                    <picture>
+                        <source srcset="./images/pophands1.png 1x, ./images/pophands2.png 2x" media="(max-width: 79.9rem)">
+                        <source srcset="./images/desktop/deskpophands1.png 1x, ./images/desktop/deskpophands2.png 2x">
+                        <img src="./images/desktop/deskpophands2.png" srcset="./images/desktop/deskpophands1.png 1x, ./images/desktop/deskpophands2.png 2x"  alt="box with goodies">
+                    </picture>
+                </div>
+                <div class="mob-subscribe__text-wrap">
+                    <h4>Thank you for <span>subscribing!</span></h4>
+                    <div class="mob-subscribe__svg-wrap"><object data="./svg/reuseline.svg" width="3.75rem" height="0.312rem" class="reusable-line"></object></div>
+                    <p>Now you will receive alerts when new news and boxes are released!</p>
+                    <button type="button" class="mob-subscribe__button button">good</button>
+                </div>
+            </div>
+        </div>
     <script src="js/modal.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>

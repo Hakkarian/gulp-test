@@ -47,6 +47,7 @@
 * {
     margin: 0;
     padding: 0;
+    outline: none;
 }
 
 body {
@@ -199,6 +200,13 @@ img {
 }
 
 .is-hidden {
+    opacity: 0;
+    backface-visibility: hidden;
+    position: absolute;
+    pointer-events: none;
+}
+
+.hide {
     opacity: 0;
     backface-visibility: hidden;
     position: absolute;
@@ -415,9 +423,13 @@ img {
     @include desktop {
         display: none;
     }
+
+    &.is-hidden {
+        transform: rotate(180deg);
+    }
 }
 .mob-menu__gray-block {
-    margin-top: 3.1rem;
+    margin-top: 3.5rem;
     height: 3rem;
 }
 .mob-container {
@@ -495,6 +507,136 @@ img {
     height: 11.4375rem;
 
 }
+
+.mob-subscribe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.2);
+
+    transition: color 250ms var(--cubic), transform 500ms var(--cubic), opacity 500ms ease-in-out;
+}
+.mob-subscribe__modal {
+    width: 18rem;
+    height: 25.8125rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #fff;
+
+    border-radius: 1.25rem;
+
+    overflow: hidden;
+
+    @include mindesktop {
+        width: 50.25rem;
+        height: 28.8125rem;
+
+        flex-direction: row;
+
+    }
+}
+.mob-subscribe__image-wrap {
+    width: 18rem;
+    height: 9.375rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--white-blue);
+
+    border: 1px solid var(--white-blue);
+    border-radius: 1.25rem 1.25rem 0rem 0rem;
+
+    @include mindesktop {
+        width: 15.625rem;
+        height: 100%;
+        border-radius: 0;
+    }
+}
+.hero__main-picture {
+}
+.hero__main-source {
+}
+.mob-subscribe__text-wrap {
+    padding: 1.88rem 1.12rem 1.5rem 1.12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    font-family: Advent Pro;
+
+    color: #000;
+
+    font-size: 1.3rem;
+    line-height: 1;
+    letter-spacing: 0.05625rem;
+
+    @include mindesktop {
+        padding: 6.25rem 3.94rem 6.25rem 3.88rem;
+
+        font-family: Bebas Neue, sans-serif;
+        font-weight: 500;
+    }
+
+    & > h4 {
+        @include mindesktop {
+            font-size: 3rem;
+            font-weight: 500;
+            letter-spacing: 0.01rem;
+        }
+    
+    & > span {
+        color: var(--main-color);
+    }
+}
+
+    & > p {
+        font-weight: 700;
+        font-size: 1.125rem;
+
+        @include mindesktop {
+            font-weight: 700;
+            letter-spacing: 0.075rem;
+        }
+    }
+}
+.mob-subscribe__svg-wrap {
+    margin-top: 1.19rem;
+    margin-bottom: 1.88rem;
+
+    @include mindesktop {
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+    }
+}
+.mob-subscribe__button {
+    margin-top: 2.35rem;
+    width: 18rem;
+    padding: 1.19rem 7.81rem 1.06rem 7.75rem;
+    border-radius: 0 0 1.25rem 1.25rem;
+
+    @include mindesktop {
+        margin-top: 3.12rem;
+        border-radius: 2rem;
+    }
+}
+.button {
+}
+//---- MODALS
+
 .svg-wrap {
 }
 .reusable-line {
@@ -2172,7 +2314,10 @@ background: #F0F8F6;
     & > .container {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+        @include mindesktop {
+            padding: 0 20rem;
+        }
     }
 
     @include desktop {
@@ -2185,26 +2330,26 @@ background: #F0F8F6;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    font-size: 0.75rem;
+        font-weight: 400;
+        line-height: 1rem;
+        letter-spacing: 0.01em;
+
+    @include mobile {
+        font-size: 0.6875rem;
+    }
 }
 
 .footer__text-svg {
-    @include desktop {
         display: flex;
         align-items: center;
         gap: 0.62rem;
-    }
 }
 .footer-year {
-    & > p {
-    font-size: 0.6875rem;
-    font-weight: 400;
-    }
 }
 .footer-by {
-    & > p {
-    font-size: 0.6875rem;
-    font-weight: 400;
-    }
+
 }
 .footer__svg-wrap {
     color: var(--text-color);
