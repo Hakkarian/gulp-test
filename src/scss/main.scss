@@ -557,7 +557,7 @@ img {
     }
     @include desktop {
         display: block;
-        transform: translate(120%, -390%);
+        transform: translate(120%, -30%);
     }
 }
 
@@ -1000,11 +1000,11 @@ img {
     @include mobile {
         display: none;
     }
-    
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: rotate(352deg) translate(50%, -20%);
+    transform: rotate(352deg) translate(10%, -35%);
 
 }
 .mission {
@@ -1811,7 +1811,8 @@ img {
     @include desktop {
         margin-right: 10%;
         display: flex;
-        column-gap: 60%;
+        align-items: center;
+        column-gap: 50%;
         width: 100%;
     }
 }
@@ -2101,7 +2102,7 @@ background: #F0F8F6;
 .contacts-desk {
     display: flex;
     align-items: center;
-    gap: 15rem;
+    gap: 14rem;
 
     @include mobile {
         display: none;
@@ -2133,7 +2134,7 @@ background: #F0F8F6;
 }
 .contacts-desk__nav2 {
     display: flex;
-    gap: 1.88rem;
+    gap: 1.5rem;
 
     @include tablet {
         flex-direction: column;
@@ -2167,12 +2168,31 @@ background: #F0F8F6;
 .footer {
     padding-top: 1.12rem;
     padding-bottom: 1.19rem;
+
+    & > .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @include desktop {
+        padding-top: 1.12rem;
+        padding-bottom: 1.12rem;
+    }
 }
 
 .footer-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
 
+.footer__text-svg {
+    @include desktop {
+        display: flex;
+        align-items: center;
+        gap: 0.62rem;
+    }
 }
 .footer-year {
     & > p {
