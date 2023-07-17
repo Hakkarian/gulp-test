@@ -1,5 +1,5 @@
 # Kiwi Eco Box
-A responsive one-page application, created with HTML5, CSS3 and TS.
+A responsive one-page application, created with HTML5, SCSS, CSS3, JS and TS.
 
 ## Table of Contents
 
