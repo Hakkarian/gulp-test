@@ -11,6 +11,7 @@ const uglify = require('gulp-uglify');
 const inject = require('gulp-inject');
 const server = require('browser-sync');
 const browserSync = require('browser-sync').create();
+const ghPages = require("gulp-gh-pages");
 
 
 gulp.task("html", () =>
@@ -85,5 +86,7 @@ gulp.task("server", () => {
   gulp.watch("dist/css/*.css").on("change", browserSync.reload);
 }
 );
+
+gulp.task("deploy", () => gulp.src("./dist/**/*").pipe(ghPages()))
 
 gulp.task("default", gulp.series("server", "watch"));
